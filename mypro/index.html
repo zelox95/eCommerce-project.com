@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>categories page</title>
+  <!-- link with css -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <header class="header header-intro-clearance header-3">
+    <div class="header-middle">
+        <div class="container">
+            <div class="header-left">
+                <button class="mobile-menu-toggler">
+                    <span class="sr-only">Toggle mobile menu</span>
+                    <i class="icon-bars"></i>
+                </button>
+                
+                <a href="index.html" class="logo">
+                    <img src="images/demos/logo/" alt="Mo Logo" width="250" height="25">
+                </a>
+            </div>
+
+            <div class="header-center">
+                <div class="header-search header-search-extended header-search-visible d-none d-lg-block">
+                    <a href="#" class="search-toggle" role="button"><i class="icon-search"></i></a>
+                    <form action="#" method="get">
+                        <div class="header-search-wrapper search-wrapper-wide">
+                            <label for="q" class="sr-only">Search</label>
+                            <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
+                            <input type="search" class="form-control" name="q" id="q" placeholder="Search product ..." required>
+                        </div><!-- End .header-search-wrapper -->
+                    </form>
+                </div><!-- End .header-search -->
+            </div>
+
+            <div class="header-right">
+                
+                <div class="account px-2">
+                    <a href="#signin-modal" title="Sign in/Sign up" class="text-decoration-none account-link">
+                        <div class="icon">
+                            <i class="icon-user text-white"></i> 
+                        </div>
+                        <p >Account</p>
+                    </a>
+                </div>
+                <style>.account-link:hover .icon i,.account-link:hover  {color: #ffc107 !important;}.icon i,.account-link p { transition: color 0.3s ease;}</style>
+                
+                <div class="wishlist">
+                    <a href="wishlist.html" title="Wishlist">
+                        <div class="icon">
+                            <i class="icon-heart-o"></i>
+                        </div>
+                        <p>Wishlist</p>
+                    </a>
+                </div>
+                
+                <div class="dropdown cart-dropdown">
+                    <a href="cart.html" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                        <div class="icon">
+                            <i class="icon-shopping-cart"></i>
+                        </div>
+                        <p>Cart</p>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-cart-action">
+                            <a href="#" class="btn btn-primary">View Cart</a>
+                            <a href="#" class="btn btn-outline-primary-2"><span>Checkout</span><i class="icon-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div><!-- End .cart-dropdown -->
+            </div>
+         </div>
+
+    <div class="header-bottom sticky-header">
+            <div class="header-left">
+                <div class="dropdown category-dropdown">
+                </div><!-- End .category-dropdown -->
+            </div><!-- End .header-left -->
+
+                    <ul class="menu sf-arrows">
+                        <li class="">
+                            <a href="index.html" class="">Computer & Laptop</a>
+                        </li>
+                        <li class="">
+                            <a href="index.html" class="">Video Games</a>
+                        </li>
+                        <li class="">
+                            <a href="index.html" class="">Tablet</a>
+                        </li>
+                        <li class="">
+                            <a href="index.html" class="">Smart Phones</a>
+                        </li>
+                        <li class="">
+                            <a href="index.html" class="">Headphones Earbuds</a>
+                        </li>
+                        <li class="">
+                            <a href="index.html" class="">Digital Cameras</a>
+                        </li>
+                        <li class="">
+                            <a href="index.html" class="">Networking Devices</a>
+                        </li>
+                        
+                        <li>
+                            <a href="elements-list.html" class="">Television</a>
+                        </li>
+                        <li>
+                            <a href="elements-list.html" class="">Speaker</a>
+                        </li>
+                        <li>
+                            <a href="elements-list.html" class="">Smart watches</a>
+                        </li>
+                    </ul>
+            
+    </div><!-- End .header-bottom -->
+</header>
+<!-- End .header -->
+  <!-- <div class="filter-bar-top">
+    <div class="filter-item">
+      <label for="brandFilter">Brand:</label>
+      <select id="brandFilter">
+        <option value="all">All</option>
+        <option value="apple">Apple</option>
+        <option value="dell">Dell</option>
+        <option value="hp">HP</option>
+      </select>
+    </div>
+  
+    <div class="filter-item">
+      <label for="colorFilter">Color:</label>
+      <select id="colorFilter">
+        <option value="all">All</option>
+        <option value="silver">Silver</option>
+        <option value="black">Black</option>
+        <option value="gray">Gray</option>
+      </select>
+    </div>
+  
+    <div class="filter-item">
+      <label for="priceFilter">Max Price:</label>
+      <input type="number" id="priceFilter" placeholder="e.g. 1000">
+    </div>
+  </div> -->
+
+
+
+  <section>
+    <h1 class="section-titlee">Labtops</h1>
+    <div class="filter-box">
+      <h2>Filter</h2>
+      <div class="filter-item">
+        <label for="brandFilter">Brand:</label>
+        <select id="brandFilter">
+          <option value="all">All Brands</option>
+          <option value="apple">Apple</option>
+          <option value="dell">Dell</option>
+          <option value="hp">HP</option>
+        </select>
+      </div>
+
+      <!-- <div class="filter-item">
+        <label for="priceFilter">Max Price ($):</label>
+        <input type="number" id="priceFilter" placeholder="Enter price" />
+      </div> -->
+
+      <div class="filter-item">
+        <label for="priceFilterRange">Max Price ($): <span id="priceValue">1000</span></label>
+        <input type="range" id="priceFilterRange" min="0" max="2000" step="10" value="1000" />
+      </div>
+
+
+
+
+      <div class="filter-item">
+        <label for="colorFilter">Color:</label>
+        <select id="colorFilter">
+          <option value="all">All Colors</option>
+          <option value="silver">Silver</option>
+          <option value="black">Black</option>
+          <option value="gray">Gray</option>
+        </select>
+      </div>
+    </div>
+
+
+    <div class="prodduct-content">
+      <div class="product-box" data-brand="apple" data-color="silver" data-price="990">
+        <div class="img-box">
+          <img src="/pics/mba13-m4-skyblue-gallery1-202503.jpg">
+          <h2 class="product-title">Macbook Air</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span>efrvht</span>
+            <span class="price">$990</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="product-box" data-brand="dell" data-color="black" data-price="1000">
+        <div class="img-box">
+          <img src="/pics/mba13-m4-skyblue-gallery1-202503.jpg">
+          <h2 class="product-title">Macbook Air</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+
+
+
+          </div>
+          <div class="price-and-card">
+            <span class="price">$1000</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="product-box" data-brand="apple" data-color="silver" data-price="990">
+        <div class="img-box">
+          <img src="/pics/mba13-m4-skyblue-gallery1-202503.jpg">
+          <h2 class="product-title">Macbook Air</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">$990</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="product-box" data-brand="apple" data-color="silver" data-price="990">
+        <div class="img-box">
+          <img src="/pics/mba13-m4-skyblue-gallery1-202503.jpg">
+          <h2 class="product-title">Macbook Air</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">$990</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="product-box" data-brand="apple" data-color="silver" data-price="990">
+        <div class="img-box">
+          <img src="/pics/mba13-m4-skyblue-gallery1-202503.jpg">
+          <h2 class="product-title">Macbook Air</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">$990</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="product-box" data-brand="apple" data-color="silver" data-price="990">
+        <div class="img-box">
+          <img src="/pics/mba13-m4-skyblue-gallery1-202503.jpg">
+          <h2 class="product-title">Macbook Air</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">$990</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="product-box" data-brand="apple" data-color="silver" data-price="990">
+        <div class="img-box">
+          <img src="/pics/mba13-m4-skyblue-gallery1-202503.jpg">
+          <h2 class="product-title">Macbook Air</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">$990</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="product-box" data-brand="apple" data-color="silver" data-price="990">
+        <div class="img-box">
+          <img src="/pics/mba13-m4-skyblue-gallery1-202503.jpg">
+          <h2 class="product-title">Macbook Air</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">$990</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="product-box" data-brand="apple" data-color="silver" data-price="990">
+        <div class="img-box">
+          <img src="/pics/mba13-m4-skyblue-gallery1-202503.jpg">
+          <h2 class="product-title">Macbook Air</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">$990</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="product-box" data-brand="apple" data-color="silver" data-price="990">
+        <div class="img-box">
+          <img src="/pics/mba13-m4-skyblue-gallery1-202503.jpg">
+          <h2 class="product-title">Macbook Air</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">$990</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="product-box" data-brand="apple" data-color="silver" data-price="1990">
+        <div class="img-box">
+          <img src="/pics/mba13-m4-skyblue-gallery1-202503.jpg">
+          <h2 class="product-title">Macbook Air</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">$1990</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="product-box">
+        <div class="img-box">
+          <img src="/pics/mba13-m4-skyblue-gallery1-202503.jpg">
+          <h2 class="product-title">Mackbook Air</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">$990</span>
+            <i class="ri-shopping-bag-line add-cart"></i>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    const brandFilter = document.getElementById("brandFilter");
+    const colorFilter = document.getElementById("colorFilter");
+    //const priceFilter = document.getElementById("priceFilter");
+    const priceFilter = document.getElementById("priceFilterRange");
+    const priceValue = document.getElementById("priceValue");
+
+    const allBoxes = document.querySelectorAll(".product-box");
+
+
+
+
+    /*function filterProducts() {
+      const brand = brandFilter.value;
+      const color = colorFilter.value;
+      const maxPrice = parseFloat(priceFilter.value);
+
+      allBoxes.forEach(box => {
+        const boxBrand = box.dataset.brand;
+        const boxColor = box.dataset.color;
+        const boxPrice = parseFloat(box.dataset.price);
+
+        const matchesBrand = brand === "all" || boxBrand === brand;
+        const matchesColor = color === "all" || boxColor === color;
+        const matchesPrice = isNaN(maxPrice) || boxPrice <= maxPrice;
+
+        if (matchesBrand && matchesColor && matchesPrice) {
+          box.style.display = "block";
+        } else {
+          box.style.display = "none";
+        }
+      });
+    }*/
+    function filterProducts() {
+      const brand = brandFilter.value;
+      const color = colorFilter.value;
+      const maxPrice = parseFloat(priceFilter.value);
+      priceValue.textContent = maxPrice;
+    
+      allBoxes.forEach(box => {
+        const boxBrand = box.dataset.brand;
+        const boxColor = box.dataset.color;
+        const boxPrice = parseFloat(box.dataset.price);
+    
+        const matchesBrand = brand === "all" || boxBrand === brand;
+        const matchesColor = color === "all" || boxColor === color;
+        const matchesPrice = isNaN(maxPrice) || boxPrice <= maxPrice;
+    
+        if (matchesBrand && matchesColor && matchesPrice) {
+          box.style.display = "block";
+        } else {
+          box.style.display = "none";
+        }
+      });
+    }
+    
+
+    brandFilter.addEventListener("change", filterProducts);
+    colorFilter.addEventListener("change", filterProducts);
+    //priceFilter.addEventListener("input", filterProducts);
+    priceFilter.addEventListener("input", filterProducts);
+  </script>
+
+</body>
+
+</html>
