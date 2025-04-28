@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>eCommerce Template</title>
+    <meta name="keywords" content="HTML5 Template">
+    <meta name="description" content="Bootstrap eCommerce Template">
+    <meta name="author" content="p-themes">
+    <!--CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productstyle.css">
+    <link rel="stylesheet" href="css/skins/skin-demo-4.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    
+
+<style>
+  
+
+</style>
+
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+        <header class="header header-intro-clearance header-3">
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-left">
+                        <button class="mobile-menu-toggler">
+                            <span class="sr-only">Toggle mobile menu</span>
+                            <i class="icon-bars"></i>
+                        </button>
+                        
+                        <a href="index.html" class="logo">
+                            <img src="images/demos/logo/" alt="Mo Logo" width="250" height="25">
+                        </a>
+                    </div>
+
+                    <div class="header-center">
+                        <div class="header-search header-search-extended header-search-visible d-none d-lg-block">
+                            <a href="#" class="search-toggle" role="button"><i class="icon-search"></i></a>
+                            <form action="#" method="get">
+                                <div class="header-search-wrapper search-wrapper-wide">
+                                    <label for="q" class="sr-only">Search</label>
+                                    <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
+                                    <input type="search" class="form-control" name="q" id="q" placeholder="Search product ..." required>
+                                </div><!-- End .header-search-wrapper -->
+                            </form>
+                        </div><!-- End .header-search -->
+                    </div>
+
+                    <div class="header-right">
+                        
+                        
+                        <div class="wishlist">
+                            <a href="login.html" title="account">
+                                <div class="icon">
+                                    <i class="icon-user"></i>
+                                </div>
+                                <p>Account</p>
+                            </a>
+                        </div>
+                        <div class="wishlist">
+                            <a href="wishlist.html" title="Wishlist">
+                                <div class="icon">
+                                    <i class="icon-heart-o"></i>
+                                </div>
+                                <p>Wishlist</p>
+                            </a>
+                        </div>
+                        
+                        <div class="dropdown cart-dropdown">
+                          <a href="cart.html" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                              <div class="icon">
+                                  <i class="icon-shopping-cart"></i>
+                              </div>
+                              <p>Cart</p>
+                          </a>
+                      </div>
+
+                        
+                        <div class="wishlist">
+                            <a href="about.html" title="Wishlist">
+                                <div class="icon">
+                                    <i class="icon-info-circle"></i>
+                                </div>
+                                <p>About Us</p>
+                            </a>
+                        </div>
+                    </div>
+                 </div>
+
+            <div class="header-bottom sticky-header">
+                    <div class="header-left">
+                        <div class="dropdown category-dropdown">
+                        </div><!-- End .category-dropdown -->
+                    </div><!-- End .header-left -->
+
+                    <div class="header-bottom sticky-header">
+                        <div class="container d-none d-lg-flex justify-content-center">
+                            <ul class="menu sf-arrows">
+                                <li><a href="laptops.html">Laptops</a></li>
+                                <li><a href="gaming.html">Video Games</a></li>
+                                <li><a href="tablet.html">Tablets</a></li>
+                                <li><a href="phones.html">Smart Phones</a></li>
+                                <li><a href="earpuds.html">Headphones Earbuds</a></li>
+                                <li><a href="camera.html">Digital Cameras</a></li>
+                                <li><a href="printer.html">Printers</a></li>
+                                <li><a href="tv.html">Television</a></li>
+                                <li><a href="speakers.html">Speaker</a></li>
+                                <li><a href="watch.html">Smart watches</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+            </div><!-- End .header-bottom -->
+        </header><!-- End .header -->
+
+
+  <section>
+    <h1 class="section-titlee">Laptops</h1>
+    <div class="filter-box">
+      <h2>Filter</h2>
+      <div class="filter-item">
+        <label for="brandFilter">Brand:</label>
+        <select id="brandFilter">
+          <option value="all">All Brands</option>
+          <option value="Xiaomi">Xiaomi</option>
+          <option value="Samsung">Samsung</option>
+          <option value="Honor">Honor</option>
+          <option value="apple">Apple</option>
+          <option value="OPPO">OPPO</option>
+          <option value="Realme">Realme</option>
+        </select>
+      </div>
+
+      <div class="filter-item">
+        <label for="priceFilterRange">Max Price (EGP): <span id="priceValue">1000</span></label>
+        <input type="range" id="priceFilterRange" min="0" max="200000" step="5" value="10000" />
+      </div>
+
+
+
+
+      <div class="filter-item">
+        <label for="colorFilter">Color:</label>
+        <select id="colorFilter">
+          <option value="all">All Colors</option>
+          <option value="black">black</option>
+          <option value="white">White</option>
+          <option value="silver">silver</option>
+          <option value="gold">Gold</option>
+          <option value="gray">Gray</option>
+        </select>
+      </div>
+    </div>
+
+
+    <div class="prodduct-content">
+      <a href="">
+      <div class="product-box" data-brand="Apple" data-color="gold" data-price="59000">
+        <div class="img-box">
+          <img src="images/demos/products/iphone16.jpg">
+          <h2 class="product-title">Apple iPhone 16 Pro Max</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">59,000 EGP</span>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="">
+      <div class="product-box" data-brand="Xiaomi" data-color="silver" data-price="50000">
+        <div class="img-box">
+          <img src="images/demos/products/Xiaomi.jpg">
+          <h2 class="product-title">Xiaomi 15</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">50,000 EGP</span>
+
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="">
+      <div class="product-box" data-brand="Samsung" data-color="gold" data-price="50000">
+        <div class="img-box">
+          <img src="images/demos/products/24.jpg">
+          <h2 class="product-title">Samsung Galaxy S24 Ultra</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">50,000 EGP</span>
+
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="">
+      <div class="product-box" data-brand="Realme" data-color="gray" data-price="200000">
+        <div class="img-box">
+          <img src="images/demos/products/realme14.jpg">
+          <h2 class="product-title">Realme 14 Pro 5G</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">20,000 EGP</span>
+
+          </div>
+        </div>
+      </div>
+      </a>
+
+
+
+      <a href="">
+      <div class="product-box" data-brand="OPPO" data-color="white" data-price="55000">
+        <div class="img-box">
+          <img src="images/demos/products/x8.jpg">
+          <h2 class="product-title">OPPO Find X8 Pro</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">55,000 EGP</span>
+
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <a href="">
+      <div class="product-box" data-brand="Honor" data-color="black" data-price="15000">
+        <div class="img-box">
+          <img src="images/demos/products/200.jpg">
+          <h2 class="product-title">Honor 200</h2>
+          <div class="rating">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+          <div class="price-and-card">
+            <span class="price">15,000 EGP</span>
+
+          </div>
+        </div>
+      </div>
+      </a>
+      </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+<footer class="footer">
+  <div class="footer-middle">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-lg-3">
+                  <div class="widget widget-about">
+                      <img src="#" class="-logo" alt="Logo" width="105" height="25">
+                      <p>Discover the future of technology with top brands and exclusive deals.</p>
+                      <div class="social-icons">
+                          <a href="#" class="social-icon" target="_blank" title="Facebook"><i class="icon-facebook-f"></i></a>
+                          <a href="#" class="social-icon" target="_blank" title="Twitter"><i class="icon-twitter"></i></a>
+                          <a href="#" class="social-icon" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
+                          <a href="#" class="social-icon" target="_blank" title="Youtube"><i class="icon-youtube"></i></a>
+                          <a href="#" class="social-icon" target="_blank" title="Pinterest"><i class="icon-pinterest"></i></a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-3">
+                  <div class="widget">
+                      <h4 class="widget-title">Top Categorys</h4>
+                      <ul class="widget-list">
+                          <li><a href="laptops.html">Laptops</a></li>
+                          <li><a href="tablet.html">Tablets</a></li>
+                          <li><a href="tv.html">Television</a></li>
+                          <li><a href="phones.html">Smart Phones</a></li>
+                          <li><a href="gaming.html">Video Games</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-3">
+                  <div class="widget">
+                      <h4 class="widget-title">My Account</h4>
+                      <ul class="widget-list">
+                          <li><a href="login.html">Sign In</a></li>
+                          <li><a href="cart.html">View Cart</a></li>
+                          <li><a href="wishlist.html">My Wishlist</a></li>
+                          <li><a href="about.html">About Us</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="footer-bottom">
+      <div class="container">
+          <p class="footer-copyright">Copyright © Mo Store. All Rights Reserved.</p>
+          <figure class="footer-payments">
+              <img src="images/demos/payments.png" alt="Payment methods" width="272" height="20">
+          </figure>
+      </div>
+  </div>
+</footer>
+</div>
+
+</body>
+<script src="js/obj.js"></script>
+</html>
